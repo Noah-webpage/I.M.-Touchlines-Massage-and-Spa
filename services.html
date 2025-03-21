@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I.M Touchlines Massage and Spa</title>
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="description" content="Massage and Spa in Gapan City">
+    <meta name="author" content="Noah S.Taruc">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://scontent.fmnl25-4.fna.fbcdn.net/v/t1.15752-9/481821968_1391672041992933_5911528497817402803_n.jpg?stp=cp0_dst-jpg_tt6&_nc_cat=107&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeEFFlDjpr7Y1Lr7MspV-vARxWoxO_63beXFajE7_rdt5QVvA00p2_uuMLxRAvjmayYMd6sBjy95uifcEfuoYUXF&_nc_ohc=YESYDYSkQe0Q7kNvgEdWERZ&_nc_oc=AdgItT1ecU2fwSUzZOj-wk9Dl-NnzdaUX1LB7fIktefQnxxhqN4KEHAUUYDcti-O-CM&_nc_zt=23&_nc_ht=scontent.fmnl25-4.fna&oh=03_Q7cD1gGfdelT4GOwUHSqB1e2N-dhHqEC8LDDIOF04UoYKlxrog&oe=67EF7577" type="image/x-icon" />
+</head>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const productCards = document.querySelectorAll(".product-card");
+
+    productCards.forEach(card => {
+        card.addEventListener("mouseenter", () => {
+            card.style.transform = "scale(1.05)";
+            card.style.boxShadow = "0 8px 15px rgba(0, 0, 0, 0.2)";
+        });
+
+        card.addEventListener("mouseleave", () => {
+            card.style.transform = "scale(1)";
+            card.style.boxShadow = "none";
+        });
+    });
+});
+</script>
+<body style="background-color: #ff96c2;">
+    
+    <header>
+        <div class="navbar">
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="services" id="services">
+        <div class="massage">
+        <h1><b>Massage Services</b></h1>
+        <p>Treat yourself to the ultimate relaxation!</p>
+        </div>
+       
+        <div class="product-container">
+            <div class="product-card">
+                <img src="images/massage1.jpg" alt="Signature Massage">
+                <h3>I.M. Touchlines Signature Massage</h3>
+                <p>60 mins  -   P599</p>
+                <p>90 mins  -   P899</p>
+               </div>
+               <div class="product-card">
+                <img src="images/swedish.jpg" alt="Swedish">
+                <h3>Swedish Massage</h3>
+               <p>60 mins   -   P349 PHP</p>
+                <p>90mins   -   P499 PHP</p>
+               </div>
+               <div class="product-card">
+                <img src="images/hotpads.jpg" alt="Hotpads">
+                <h3>Massage with Hotpad</h3>
+               <p>60 mins   -   P399 PHP</p>
+                <p>90mins   -   P599 PHP</p>
+               </div>
+               <div class="product-card">
+                <img src="images/ventosa.jpg" alt="Ventosa">
+                <h3>Massage with Ventosa</h3>
+               <p>60 mins   -   P399 PHP</p>
+                <p>90mins   -   P599 PHP</p>
+               </div>
+            </section>
+            <hr>
+            <section>
+               <div class="massage">
+                <h1><b>Hair Services</b></h1>
+                <p>Transform your looks, let us make it shine!</p>
+                </div>
+
+                <div class="product-container">
+                    <div class="product-card">
+                        <img src="images/rebond" alt="Rebond">
+                        <h3>Rebond</h3>
+                        <p>Shoulder Length 1499 PHP</p>
+                         <p>Braline 1999 PHP</p>
+            <p>Waistline 2499 PHP</p>
+            </div>
+          
+            <div class="product-container">
+                    <div class="product-card">
+                        <img src="images/haircolor.jpg" alt="Hair Color">
+                        <h3>Hair Color</h3>
+                        <p>Shoulder Length 699 PHP</p>
+                         <p>Braline 999 PHP</p>
+            <p>Waistline 1299 PHP</p>
+            <p>Rootings 349 PHP</p>
+            </div>
+          
+            <div class="product-container">
+                    <div class="product-card">
+                        <img src="images/treatment" alt="Hair Treatment">
+                        <h3>Hair Treatment</h3>
+                        <p>Hair Spa 499 PHP</p>
+                         <p>Hot Oil 399 PHP</p>
+            <p>Hair Cellophane 999 PHP</p>
+            </div>
+           
+            <div class="product-container">
+                    <div class="product-card">
+                        <img src="images/brazilian.jpg" alt="Brazilian Blowout">
+                        <h3>Brazilian Blowout</h3>
+                        <p>Shoulder Length 1499 PHP</p>
+                         <p>Braline 1999 PHP</p>
+            <p>Waistline 2499 PHP</p>
+            </div>
+        </section>
+        <footer class="Footer">
+                
+            <p>I.M. Touchlines Massage and Spa</p>
+            <p> © 2025 I.M. Touchlines Massage and Spa - Gapan City Branch. All Rights Reserved </p>  
+            <p> Author: Noah S Taruc </p>
+        
+        </footer>
+            </main>
+            </body>
+            </html>

@@ -1,0 +1,322 @@
+
+<!--Main CSS-->
+*
+
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    
+    
+}
+
+.backpic {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(images/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    background-color: #FF4694;
+    color: white;
+    padding: 2px 0;
+    text-align: center;
+  }
+
+
+ 
+
+    
+
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+
+
+heading h1 {
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+
+    
+
+.content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: hsl(146, 64%, 98%);
+  
+}
+
+
+.content h1 {
+    font-size: 70px;
+    margin-top: 80px;
+    color: white;
+}
+
+.content p {
+   font-size: 25px;
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+    color: white;
+    text-align: center;
+ 
+}
+
+.aboutinfo h1 {
+    font-size:30px ;
+    margin-top: 70px;
+}
+
+.aboutinfo p {
+    font-size:25px ;
+    margin: 40px auto;
+    font-weight: 100;
+    line-height:25px;
+    margin-left: 10px;
+}
+
+button {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+ font-weight: bold;
+    border: solid #fff;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+ 
+}
+
+.navbar ul li {
+      list-style: none;
+      display: inline-block;
+      margin: 0 20px;
+      position: relative;
+    }
+    
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.navbar ul li:after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #E11584;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover:after{
+    width: 100%;
+}
+
+main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+section h2 {
+    color: #333;
+}
+
+
+
+<!--About CSS-->
+
+.about-container {
+    display: flex;
+    background: #fff;
+    max-width: 900px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .about-content {
+    flex: 1;
+    padding: 40px;
+  }
+  .about-content h2 {
+    margin-bottom: 15px;
+    color: #FF4694;
+    font-size: 60px;
+    text-align: center;
+  }
+  .about-content p {
+    line-height: 1.6;
+    color: #555;
+    font-size: 20px;
+    margin-top: 30px;
+  }
+  .about-image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eee;
+  }
+  .about-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  @media (max-width: 768px) {
+    .about-container {
+      flex-direction: column;
+    }
+    .about-image {
+      padding: 20px;
+    }
+  }
+
+.business img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+
+<!--Services CSS-->
+.massage h1 {
+    text-align: center;
+    font-size: 60px;
+}
+
+.product-container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1000px;
+    width: 100%;
+
+    
+}
+
+.product-card {
+    background-color: #fff;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+    
+}
+
+.product-card img {
+  width: 250px;
+  height: 150px; 
+    border-radius: 8px;
+}
+
+.product-card h3 {
+    margin: 10px 0 5px;
+}
+
+.product-card p {
+    color: #666;
+}
+
+.massage h1{
+    font-size: 50px;
+    font-weight: 50;
+    text-align: center;
+  
+}
+
+.massage p {
+    font-family: arial;
+    text-align: center;
+    font-family: 'Times New Roman';
+    font-size: 20px;
+
+}
+.massage {
+    line-height: 2px;
+}
+
+
+
+
+
+<!--Contacts CSS-->
+.contact-container {
+    max-width: 4000px;
+    padding: 40px;
+    border: 2px solid #FF4694;
+    border-radius: 10px;
+    background-color: #ffc8f1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+margin-top: 10px;
+}
+.contact-container h2 {
+    text-align: center;
+    color: #FF4694;
+    font-size: 40px;
+}
+.contact-container label {
+    display: block;
+    margin-top: 10px;
+}
+.contact-container input,
+.contact-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.contact-container button {
+    width: 100%;
+    background-color: #FF4694;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    margin-top: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.contact-container button:hover {
+    background-color:  #E11584;
+}
+
+
+<!--Footer CSS-->
+.Footer {
+    width: 100%;
+    padding: 250px;
+    text-align: center;
+  background-color: #FF4694;
+}
+
+
